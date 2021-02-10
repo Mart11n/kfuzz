@@ -1,1 +1,0 @@
-cmd_/home/lin/playground/my.kfuzz/fuzzing-remote/lkm/Module.symvers := sed 's/ko$$/o/' /home/lin/playground/my.kfuzz/fuzzing-remote/lkm/modules.order | scripts/mod/modpost     -o /home/lin/playground/my.kfuzz/fuzzing-remote/lkm/Module.symvers -e -i Module.symvers   -T -
