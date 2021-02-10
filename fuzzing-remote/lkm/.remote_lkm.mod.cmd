@@ -1,0 +1,1 @@
+cmd_/home/lin/playground/my.kfuzz/fuzzing-remote/lkm/remote_lkm.mod := { echo  /home/lin/playground/my.kfuzz/fuzzing-remote/lkm/remote_lkm.o; echo; } > /home/lin/playground/my.kfuzz/fuzzing-remote/lkm/remote_lkm.mod

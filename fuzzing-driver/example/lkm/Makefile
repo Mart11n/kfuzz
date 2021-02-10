@@ -1,7 +1,7 @@
 obj-m := poc_lkm.o
 
 KVERSION = $(shell uname -r)
-KDIR := /lib/modules/$(KVERSION)/build
+KDIR ?= /lib/modules/$(KVERSION)/build
 
 default:
 	$(MAKE) -C $(KDIR) SUBDIRS=$(shell pwd) modules
