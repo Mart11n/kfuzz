@@ -64,10 +64,9 @@ noinline long poc_lkm_ioctl(struct file *f, unsigned int cmd, unsigned long arg)
 	return 0;
 }
 
-struct file_operations poc_lkm_fops =
+struct proc_ops poc_lkm_fops =
 {
-    .owner = THIS_MODULE,
-    .unlocked_ioctl = poc_lkm_ioctl,
+    .proc_ioctl = poc_lkm_ioctl,
 };
 
 static int create_poc_lkm_fops(void)
