@@ -11,7 +11,7 @@ include <asm/uaccess.h>
 resource fd_poc_lkm[fd]
 
 # operations
-syz_open_dev$poc_lkm(dev ptr[in, string["/proc/poc_lkm"]], flags flags[open_flags], mode flags[open_mode]) fd_poc_lkm
+open$poc_lkm(dev ptr[in, string["/proc/poc_lkm"]], flags flags[open_flags], mode flags[open_mode]) fd_poc_lkm
 
 ioctl$poc_lkm(fd fd_poc_lkm, cmd flags[poc_lkm_cmds], arg ptr[in, poc_lkm_object])
 close$poc_lkm(fd fd_poc_lkm)
